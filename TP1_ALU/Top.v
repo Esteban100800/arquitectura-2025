@@ -1,4 +1,3 @@
-
 `timescale 1ns / 1ps
 
 module top_module (
@@ -6,7 +5,7 @@ module top_module (
     input wire [2:0] i_btn,
     input wire i_clk,
     input wire i_reset,
-    output wire signed[7:0] o_Result,
+    output wire [7:0] o_Result,
     output wire o_Zero,
     output wire o_Carry
 );
@@ -38,6 +37,4 @@ module top_module (
             if (i_btn[2]) i_opcode_reg <= i_sw [5:0];
         end    
     end
-
-    assign o_Result = alu_inst.Result;
 endmodule
