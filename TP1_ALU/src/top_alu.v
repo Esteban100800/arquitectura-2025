@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module top_module (
+module top_alu (
     input wire [7:0] i_sw,
     input wire [2:0] i_btn,
     input wire i_clk,
@@ -14,7 +14,7 @@ module top_module (
     reg [7:0] i_B_reg;
     reg [5:0] i_opcode_reg;
 
-    ALU  #(
+    alu  #(
         .NBDATA(8),
         .NBOP(6)
     ) alu_inst (
