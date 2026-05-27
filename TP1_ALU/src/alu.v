@@ -1,4 +1,4 @@
-module ALU #(
+module alu #(
     parameter NBDATA = 8,
     parameter NBOP = 6
 ) (

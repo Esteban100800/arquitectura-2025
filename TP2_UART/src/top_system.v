@@ -28,7 +28,7 @@ module top_system (
         else         wr_prev <= i_wr_send;
     end
 
-    alu_top alu_inst (
+    top_alu alu_inst (
         .i_clk(i_clk),
         .i_reset(i_reset),
         .i_sw(i_sw),
